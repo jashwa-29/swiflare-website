@@ -51,10 +51,10 @@ const FeaturedProjects = () => {
                     </span>
                   ))}
                   <div className="ml-auto">
-                    <button className="bg-blue-400 p-2 rounded-full">
+                    <button className="bg-[#3FA2F6] p-2 rounded-full">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 text-white"
+                        className="h-5 w-5 text-white"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"

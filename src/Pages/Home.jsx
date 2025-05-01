@@ -4,6 +4,8 @@ import AboutUs from '../Components/HomeComponents/AboutUs'
 import FeaturedProjects from '../Components/HomeComponents/FeaturedProjects'
 import ServicesSection from '../Components/HomeComponents/ServicesSection'
 import WhyChooseUs from '../Components/HomeComponents/WhyChooseUs'
+import Banner from '../Components/HomeComponents/banner'
+import Testimonials from '../Components/HomeComponents/Testimonials'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
         <ServicesSection/>
         <FeaturedProjects/>
         <WhyChooseUs/>
+        <Testimonials/>
+        <Banner/>
 
 
      

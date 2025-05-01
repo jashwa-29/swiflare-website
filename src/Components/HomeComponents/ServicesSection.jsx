@@ -29,7 +29,8 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto flex justify-between gap-16 items-start">
         {/* Left Side */}
         <div className="w-[33%]">
-          <div className="text-[#C6C7D5] border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)">
+        <div className="text-[#C6C7D5] text-left border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit  mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)]
+">
             Our Services
           </div>
 
@@ -57,13 +58,13 @@ const ServicesSection = () => {
               </div>
               <div className="flex justify-between items-center w-full">
                 <div className="w-[410px]">
-                  <h3 className="text-white text-2xl font-semibold mb-2">
+                  <h3 className="text-white text-[28px] mb-2 main-font">
                     {service.title}
                   </h3>
                   <p className="text-gray-400 mb-4">{service.description}</p>
                 </div>
                 <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
-                  <span>Get Started</span>
+                  <span>Read More</span>
                   {/* Scale only the icon on hover */}
                   <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
                 </button>

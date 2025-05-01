@@ -35,13 +35,13 @@ const Header = () => {
               <Link to="/portfolio" className="text-base sub-font font-medium text-[#C6C7D5] hover:bg-[#3FA2F6] hover:text-white transition-all duration-300 py-1 px-3 border-2 border-transparent rounded-full">
                 Portfolio
               </Link>
-              <Link to="/contact" className="text-base sub-font font-medium text-[#C6C7D5] hover:bg-[#3FA2F6] hover:text-white transition-all duration-300 py-1 px-3 border-2 border-transparent rounded-full">
+              {/* <Link to="/contact" className="text-base sub-font font-medium text-[#C6C7D5] hover:bg-[#3FA2F6] hover:text-white transition-all duration-300 py-1 px-3 border-2 border-transparent rounded-full">
                 Contact
-              </Link>
+              </Link> */}
             </div>
 
             <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
-              <span>Get Started</span>
+              <span>Contact Us</span>
               <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
             </button>
           </nav>
