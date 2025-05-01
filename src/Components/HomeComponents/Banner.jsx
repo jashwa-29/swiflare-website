@@ -11,7 +11,7 @@ const Banner = () => {
 ">
          Contact Us
           </div>
-        <h1 className="main-font font-[500] lg:text-[55px] sm:text-6xl bg-clip-text text-white sm:w-full lg:w-[850px] mx-auto capitalize">
+        <h1 className="main-font font-[500] lg:text-[55px] text-4xl bg-clip-text text-white sm:w-full lg:w-[850px] mx-auto capitalize">
         Let's create the best
           <span className="bg-[#3FA2F6] text-white inline-block -rotate-3 py-2 rounded-[5px] mx-[16px]">
           

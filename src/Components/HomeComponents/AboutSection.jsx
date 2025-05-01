@@ -31,10 +31,10 @@ const AboutSection = () => {
 
   return (
     <div className="min-h-screen text-white flex flex-col items-center justify-center py-12">
-      <div className="w-full flex justify-between gap-16">
+      <div className="w-full flex lg:flex-row flex-col justify-between gap-16">
         
         {/* Left Side - Accordion List */}
-        <div className="space-y-4 w-[40%] sticky top-0">
+        <div className="space-y-4 lg:w-[40%] w-full">
           {sections.map((item, index) => {
             const isOpen = openSection === index;
 
@@ -72,7 +72,7 @@ const AboutSection = () => {
         </div>
 
         {/* Right Side - About Text and Button */}
-        <div className="w-[60%]">
+        <div className="lg:w-[60%] w-full">
           <p className="text-lg leading-8 mb-6 text-[#C6C7D5] sub-font">
             At <span className="font-bold">Web Designs Sphere</span>, Our Journey Began With A Simple Mission — To Help Businesses Establish A Strong And Professional Online Presence Through Stunning, Functional Websites. What Started As A Small Web Design Studio Has Now Evolved Into A Full-Service Digital Agency Offering <span className="font-bold">Web Design, Development, SEO, Google Ads, Meta Ads, And Social Media Marketing And Management</span>.
           </p>
@@ -90,7 +90,7 @@ const AboutSection = () => {
                </button>
 
            {/* Bottom Stats */}
-      <div className="flex flex-col md:flex-row gap-12 items-center justify-start mt-16 text-center">
+      <div className="flex flex-wrap md:flex-row gap-12 items-center justify-start mt-16 text-center">
         <div>
           <h2 className="text-5xl font-medium main-font">10<span className="text-[#3FA2F6]">Y</span></h2>
           <p className="text-gray-400 mt-2 sub-font">Years in business</p>

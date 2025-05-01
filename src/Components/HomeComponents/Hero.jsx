@@ -17,18 +17,18 @@ const Hero = () => {
           👋 Welcome To Web Designs Sphere
         </div>
 
-        <h1 className="main-font font-[500] lg:text-[80px] sm:text-6xl bg-clip-text text-white">
+        <h1 className="main-font font-[500] lg:text-[80px] text-3xl  bg-clip-text text-white">
           We Build Websites That Rank,
         </h1>
 
-        <h1 className="main-font font-[500] lg:text-[80px] sm:text-6xl bg-clip-text text-white">
+        <h1 className="main-font font-[500] lg:text-[80px] text-3xl bg-clip-text text-white">
           Convert, and 
           <span className="bg-[#3FA2F6] text-white inline-block -rotate-3 rounded-[5px] mx-[16px]">
             Scale
           </span>
         </h1>
 
-        <h1 className="main-font font-[500] lg:text-[80px] sm:text-6xl bg-clip-text text-white">
+        <h1 className="main-font font-[500] lg:text-[80px] text-3xl bg-clip-text text-white">
           Your Business
         </h1>
 
