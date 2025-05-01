@@ -61,7 +61,7 @@ const Footer = () => {
             </div>
             <div className="mt-12 pt-8 border-t border-gray-100">
               <div className="flex flex-col md:flex-row justify-between items-center">
-                <p className="text-sm text-[#A9AABA] text-center md:text-left">© 2025 Minimal Co. All rights reserved.</p>
+                <p className="text-sm text-[#A9AABA] text-center md:text-left">© 2025 Swiflare AI Innovations. All rights reserved.</p>
                 <div className="mt-4 md:mt-0 flex space-x-6">
                   <a href="#" className="text-xs text-[#A9AABA] hover:text-[#3FA2F6] transition-colors duration-200">Privacy Policy</a>
                   <a href="#" className="text-xs text-[#A9AABA] hover:text-[#3FA2F6] transition-colors duration-200">Terms of Service</a>
