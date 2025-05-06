@@ -2,11 +2,14 @@ import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const location = useLocation();
+  const currentPath = location.pathname === '/' ? 'home' : location.pathname.slice(1);
 
   const navLinks = ['Home', 'About', 'Services', 'Portfolio'];
 
@@ -53,27 +56,36 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex lg:items-center lg:space-x-10 text-[#C6C7D5] border border-[#FFFFFF38] rounded-full px-8 py-3">
-              {navLinks.map((item) => (
-                <Link
-                  key={item}
-                  to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`}
-                  className="text-base font-medium text-[#C6C7D5] hover:bg-[#3FA2F6] hover:text-white transition-all duration-300 py-1 px-3 border-2 border-transparent rounded-full"
-                >
-                  {item}
-                </Link>
-              ))}
+              {navLinks.map((item) => {
+                const linkPath = item.toLowerCase() === 'home' ? 'home' : item.toLowerCase();
+                const isActive = currentPath === linkPath;
+
+                return (
+                  <Link
+                    key={item}
+                    to={`/${linkPath === 'home' ? '' : linkPath}`}
+                    className={`text-base font-medium py-1 px-3 border-2 rounded-full transition-all duration-300 ${
+                      isActive
+                        ? 'bg-[#3FA2F6] text-white border-transparent'
+                        : 'text-[#C6C7D5] border-transparent hover:bg-[#3FA2F6] hover:text-white'
+                    }`}
+                  >
+                    {item}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Desktop Contact Button */}
             <Link
               to="/contact"
-                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 lg:flex hidden text-white  items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+              className="bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 lg:flex hidden text-white items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
             >
               <span>Contact Us</span>
-                <FontAwesomeIcon 
-                    icon={faArrowRight} 
-                    className="transition-transform duration-300 group-hover:translate-x-1" 
-                  />
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              />
             </Link>
           </nav>
         </div>
@@ -107,16 +119,25 @@ const Header = () => {
 
         {/* Mobile Nav Links */}
         <div className="mt-10 space-y-2">
-          {navLinks.map((item) => (
-            <Link
-              key={item}
-              to={`/${item.toLowerCase() === 'home' ? '' : item.toLowerCase()}`}
-              className="block w-full py-2 px-3 font-medium text-white hover:bg-[#3FA2F6] rounded-full transition"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {item}
-            </Link>
-          ))}
+          {navLinks.map((item) => {
+            const linkPath = item.toLowerCase() === 'home' ? 'home' : item.toLowerCase();
+            const isActive = currentPath === linkPath;
+
+            return (
+              <Link
+                key={item}
+                to={`/${linkPath === 'home' ? '' : linkPath}`}
+                className={`block w-full py-2 px-3 font-medium rounded-full transition ${
+                  isActive
+                    ? 'bg-[#3FA2F6] text-white'
+                    : 'text-white hover:bg-[#3FA2F6]'
+                }`}
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Mobile Contact Us Button */}
