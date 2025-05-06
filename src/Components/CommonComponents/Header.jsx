@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -6,13 +6,31 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = ['Home', 'About', 'Services', 'Portfolio'];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header>
       {/* Top Nav */}
-      <div className="fixed inset-x-0 top-0 z-40">
+      <div
+        className={`fixed inset-x-0 top-0 z-40 transition-all duration-500 ${
+          isScrolled ? 'bg-[#050516]/90 backdrop-blur-md shadow-md' : 'bg-transparent'
+        }`}
+      >
         <div className="relative px-4 mx-auto sm:px-6 lg:px-28 py-3">
           <nav className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
@@ -49,7 +67,7 @@ const Header = () => {
             {/* Desktop Contact Button */}
             <Link
               to="/contact"
-              className="bg-[#3FA2F6] rounded-full  px-6 py-3 text-white lg:flex hidden items-center gap-3 text-base hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out"
+              className="bg-[#3FA2F6] rounded-full px-6 py-3 text-white lg:flex hidden items-center gap-3 text-base hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out"
             >
               <span>Contact Us</span>
               <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 group-hover:scale-125" />
@@ -61,7 +79,7 @@ const Header = () => {
       {/* Mobile Backdrop */}
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0  z-30 lg:hidden"
+          className="fixed inset-0 z-30 lg:hidden"
           onClick={() => setIsMobileMenuOpen(false)}
         />
       )}

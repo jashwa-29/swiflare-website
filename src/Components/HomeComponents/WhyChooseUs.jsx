@@ -42,6 +42,7 @@ export default function MarketingAgencySection() {
         {/* Right - Text and features */}
         <div className="flex flex-col justify-center gap-6">
           <div>
+            
           <div className="text-[#C6C7D5] text-left border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit  mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)]
 ">
           Why Choose Us
