@@ -113,7 +113,7 @@ const ServiceCard = ({ service }) => {
 
 const ServicesPage = () => {
   return (
-    <div className="min-h-screen bg-[#050516] py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen mt-16 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
