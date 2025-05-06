@@ -1,7 +1,7 @@
 import React from 'react';
 import socialMediaImage from '../assets/Social Media Management.jpg';
 import performanceMarketingImage from '../assets/Performance Marketing.jpg';
-import webDevImage from '../assets/modern-monitor-elegant-table.jpg';
+import webDevImage from '../assets/Website Development.jpg';
 import seoImage from '../assets/SEO Services.jpg';
 import mobileAppImage from '../assets/Mobile Applications.jpg';
 import webAppImage from '../assets/Web Applications.jpg';
