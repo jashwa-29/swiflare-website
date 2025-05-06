@@ -83,11 +83,16 @@ const AboutSection = () => {
             Today, We’re Proud To Be A One-Stop Digital Partner, Combining Creativity And Strategy To Help Businesses Not Just Exist Online — But Thrive.
           </p>
 
-         <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
-                 <span>Learn More</span>
-                 {/* Scale only the icon on hover */}
-                 <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
-               </button>
+  <button
+                  type="submit"
+                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                >
+                  <span>Get Started</span>
+                  <FontAwesomeIcon 
+                    icon={faArrowRight} 
+                    className="transition-transform duration-300 group-hover:translate-x-1" 
+                  />
+                </button>
 
            {/* Bottom Stats */}
       <div className="flex flex-wrap md:flex-row gap-12 items-center justify-start mt-16 text-center">

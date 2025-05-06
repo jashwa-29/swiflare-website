@@ -33,10 +33,16 @@ const Hero = () => {
         </h1>
 
         <div className="flex lg:flex-row flex-col justify-center items-center gap-5 mt-5">
-          <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
+    <button
+                  type="submit"
+                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                >
             <span>Get Started</span>
             {/* Scale only the icon on hover */}
-            <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
+            <FontAwesomeIcon 
+                    icon={faArrowRight} 
+                    className="transition-transform duration-300 group-hover:translate-x-1" 
+                  />
           </button>
           <p className="text-[#C6C7D5] w-[400px] text-lg">
             Our Agency Drives Results, and Fuels Success in the Dynamic Landscape of Online Marketing.

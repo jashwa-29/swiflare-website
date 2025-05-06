@@ -42,11 +42,16 @@ const ServicesSection = () => {
             As a digital marketing agency, we offer services that can cover various aspects of online marketing and brand growth. Here is a breakdown of the main services we can offer.
           </p>
 
-          <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
-            <span>All Services</span>
-            {/* Scale only the icon on hover */}
-            <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
-          </button>
+  <button
+                  type="submit"
+                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                >
+                  <span>Get Started</span>
+                  <FontAwesomeIcon 
+                    icon={faArrowRight} 
+                    className="transition-transform duration-300 group-hover:translate-x-1" 
+                  />
+                </button>
         </div>
 
         {/* Right Side */}
@@ -63,11 +68,16 @@ const ServicesSection = () => {
                   </h3>
                   <p className="text-gray-400 mb-4">{service.description}</p>
                 </div>
-                <button className="bg-[#3FA2F6] rounded-full w-auto px-6 py-3 text-white flex items-center gap-3 text-base sub-font hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out">
-                  <span>Read More</span>
-                  {/* Scale only the icon on hover */}
-                  <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 ease-in-out group-hover:scale-125" />
-                </button>
+          <button
+                          type="submit"
+                          className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                        >
+                          <span>Get Started</span>
+                          <FontAwesomeIcon 
+                            icon={faArrowRight} 
+                            className="transition-transform duration-300 group-hover:translate-x-1" 
+                          />
+                        </button>
               </div>
             </div>
           ))}

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Footer from './Components/CommonComponents/Footer';
 import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
-      <Route path="/contact" element={<h1 className='text-3xl font-bold underline'>Contact</h1>} />
+      <Route path="/contact" element={<Contact/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

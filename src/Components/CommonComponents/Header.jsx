@@ -67,10 +67,13 @@ const Header = () => {
             {/* Desktop Contact Button */}
             <Link
               to="/contact"
-              className="bg-[#3FA2F6] rounded-full px-6 py-3 text-white lg:flex hidden items-center gap-3 text-base hover:bg-[#AD49E1] hover:scale-90 transition-all duration-500 group ease-in-out"
+                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
             >
               <span>Contact Us</span>
-              <FontAwesomeIcon icon={faArrowRight} className="transition-transform duration-500 group-hover:scale-125" />
+                <FontAwesomeIcon 
+                    icon={faArrowRight} 
+                    className="transition-transform duration-300 group-hover:translate-x-1" 
+                  />
             </Link>
           </nav>
         </div>
