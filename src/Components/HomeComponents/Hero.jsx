@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 text-center w-[1200px] flex flex-col justify-center items-center gap-3">
         <div className="text-[#C6C7D5] border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit mx-auto mb-5">
-          👋 Welcome To Web Designs Sphere
+          👋 Welcome To Swiflare AI Innovations
         </div>
 
         <h1 className="main-font font-[500] lg:text-[80px] text-3xl  bg-clip-text text-white">
