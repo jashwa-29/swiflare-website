@@ -73,7 +73,7 @@ const Contact = () => {
     } focus:ring-1 p-3.5 transition-all duration-200`;
 
   return (
-    <div className="min-h-screen px-4 mx-auto sm:px-6 lg:px-28 py-28 bg-[#0A0A1A]">
+    <div className="min-h-screen px-4 mx-auto sm:px-6 lg:px-28 py-28 ">
       <ShakeStyles />
 
       <div className="max-w-7xl mx-auto">
