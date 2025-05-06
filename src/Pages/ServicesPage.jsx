@@ -134,12 +134,12 @@ const ServicesPage = () => {
 
         {/* CTA */}
         <div className="mt-20 text-center">
-          <p className="text-gray-400 mb-5 text-sm">
+          <p className="text-gray-400 mb-5 sub-font text-sm">
             Ready to transform your business with our expertise?
           </p>
             <button
                           type="submit"
-                          className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                          className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 mx-auto text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
                         >
                     <span>Get In Touch</span>
                     {/* Scale only the icon on hover */}
