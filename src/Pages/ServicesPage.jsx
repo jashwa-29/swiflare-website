@@ -8,6 +8,8 @@ import seoImage from '../assets/SEO Services.jpg';
 import mobileAppImage from '../assets/Mobile Applications.jpg';
 import webAppImage from '../assets/Web Applications.jpg';
 import videoProductionImage from '../assets/Video Production.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const services = [
   {
@@ -135,9 +137,17 @@ const ServicesPage = () => {
           <p className="text-gray-400 mb-5 text-sm">
             Ready to transform your business with our expertise?
           </p>
-          <button className="px-6 py-2.5 text-sm border border-indigo-500 text-indigo-100 rounded-full hover:bg-indigo-900 hover:text-white hover:border-indigo-600 transition-all duration-300 font-light">
-            Get in touch
-          </button>
+            <button
+                          type="submit"
+                          className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                        >
+                    <span>Get In Touch</span>
+                    {/* Scale only the icon on hover */}
+                    <FontAwesomeIcon 
+                            icon={faArrowRight} 
+                            className="transition-transform duration-300 group-hover:translate-x-1" 
+                          />
+                  </button>
         </div>
       </div>
     </div>
