@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="py-16 relative overflow-hidden">
+    <footer className="py-16 relative overflow-hidden bg-[radial-gradient(at_bottom_center,_#021644_0%,_#050516_70%)]">
       <div className="px-4 mx-auto sm:px-6 lg:px-28 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           {/* Logo & Description */}
