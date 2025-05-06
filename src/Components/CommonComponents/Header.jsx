@@ -67,7 +67,7 @@ const Header = () => {
             {/* Desktop Contact Button */}
             <Link
               to="/contact"
-                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
+                  className=" bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-auto px-8 py-3.5 lg:flex hidden text-white  items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
             >
               <span>Contact Us</span>
                 <FontAwesomeIcon 
