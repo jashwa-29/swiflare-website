@@ -36,9 +36,14 @@ const Portfolio = () => {
   return (
     <section className="bg-[#050516] py-20 px-4 md:px-8 lg:px-16 mt-14">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-white main-font mb-12 text-center">
-          Our Work & Portfolio
-        </h2>
+      <div className="text-center mb-12">
+          <h1 className="text-white text-4xl md:text-5xl">
+            Our Works and <span className="text-[#3FA2F6]">Portfolio</span>
+          </h1>
+          <p className="mt-5 max-w-xl mx-auto text-lg text-[#C6C7D5]">
+            We'd love to hear from you. Reach out for collaborations, questions, or just to say hello!
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

@@ -72,6 +72,25 @@ const Contact = () => {
         : "border-[#3a3a50] focus:border-[#3FA2F6] focus:ring-[#3FA2F6]"
     } focus:ring-1 p-3.5 transition-all duration-200`;
 
+  // Social media links
+  const socialLinks = [
+    {
+      icon: FaTwitter,
+      url: "https://twitter.com/swiflare",
+      label: "Twitter"
+    },
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/swiflare?igsh=bXdmeHJ6MnI2Y2J6",
+      label: "Instagram"
+    },
+    {
+      icon: FaLinkedin,
+      url: "https://linkedin.com/company/swiflare",
+      label: "LinkedIn"
+    }
+  ];
+
   return (
     <div className="min-h-screen px-4 mx-auto sm:px-6 lg:px-28 py-28 ">
       <ShakeStyles />
@@ -102,7 +121,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg text-white">Location</h3>
-                  <p className="text-white/80 text-sm">123 Tech Street, Silicon Valley, CA 94025</p>
+                  <p className="text-white/80 text-sm">W15, North Main Road, C- Sector, Anna Nagar West Extension, Chennai - 600101</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -111,7 +130,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg text-white">Email</h3>
-                  <p className="text-white/80 text-sm">hello@example.com</p>
+                  <p className="text-white/80 text-sm">reachus@swiflare.com</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -120,20 +139,22 @@ const Contact = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg text-white">Phone</h3>
-                  <p className="text-white/80 text-sm">+1 (555) 123-4567</p>
+                  <p className="text-white/80 text-sm">+91 7871737666</p>
                 </div>
               </div>
               <div className="pt-6">
                 <h3 className="text-lg text-white mb-4">Follow Us</h3>
                 <div className="flex space-x-3">
-                  {[FaTwitter, FaInstagram, FaLinkedin, FaGithub].map((Icon, i) => (
+                  {socialLinks.map((social, i) => (
                     <a
                       key={i}
-                      href="#"
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="bg-white/10 hover:bg-[#3FA2F6] rounded-full p-3 transition-all duration-300 hover:scale-110"
-                      aria-label="Social"
+                      aria-label={social.label}
                     >
-                      <Icon className="h-5 w-5 text-white" />
+                      <social.icon className="h-5 w-5 text-white" />
                     </a>
                   ))}
                 </div>

@@ -10,6 +10,7 @@ import webAppImage from '../assets/Web Applications.jpg';
 import videoProductionImage from '../assets/Video Production.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -77,7 +78,7 @@ const ServiceCard = ({ service }) => {
       } transform transition-opacity transition-transform duration-700 ease-out`}
     >
       {inView && (
-        <>
+        <Link to={`/services/${service.id}`} className="block h-full w-full">
           {/* Background Image with Gradient Overlay */}
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -105,7 +106,7 @@ const ServiceCard = ({ service }) => {
               </ul>
             </div>
           </div>
-        </>
+        </Link>
       )}
     </div>
   );
@@ -117,8 +118,8 @@ const ServicesPage = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-3xl md:text-4xl main-font text-gray-100 mb-3">
-            Our Services
+        <h1 className="text-white text-4xl md:text-5xl">
+           Our <span className="text-[#3FA2F6]">Services</span>
           </h1>
           <p className="text-[#A9AABA] text-[17px]">
             Comprehensive solutions tailored to your business needs

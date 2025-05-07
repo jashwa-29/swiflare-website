@@ -18,7 +18,7 @@ const Home = () => {
         <WhyChooseUs/>
         <Testimonials/>
         <Banner/>
-
+    
 
      
     </main>

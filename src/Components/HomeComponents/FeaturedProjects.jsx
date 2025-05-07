@@ -7,17 +7,17 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     id: 1,
+    tags: ['Healthcare', 'Website', 'UI/UX Design'],
+    image: aesthetichospital,
+    title: 'Website for Aesthetic Studio',
+    link: '/projects/aesthetic-studio-website',
+  },
+  {
+    id: 2,
     tags: ['Boost', 'Website', 'Marketing'],
     image: aesthetichospital,
     title: 'Growth Marketing For Anox',
     link: '/projects/anox-growth-marketing',
-  },
-  {
-    id: 2,
-    tags: ['Packaging', 'Design', 'Marketing'],
-    image: aesthetichospital,
-    title: 'Packaging Design For Kopiku',
-    link: '/projects/kopiku-packaging-design',
   },
 ];
 
@@ -27,14 +27,14 @@ const FeaturedProjects = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="mb-6">
           <div className="text-[#C6C7D5] border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit mx-auto mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)]">
-            Featured Project
+            Featured Projects
           </div>
         </div>
         <h2 className="text-4xl md:text-[45px] text-white mb-4 main-font">
           Check Our Project With Real Results
         </h2>
         <p className="text-gray-400 max-w-2xl mx-auto mb-12">
-          Dive into our portfolio and discover the remarkable success stories behind Campaign.
+          Dive into our portfolio and discover the remarkable success stories behind our campaigns.
           Explore our work and envision how we can elevate your brand to new heights.
         </p>
 
@@ -98,7 +98,7 @@ const FeaturedProjects = () => {
       <div className="flex items-center justify-center gap-4 p-6 rounded-2xl max-w-3xl mx-auto mt-12">
         <div className="text-right">
           <h3 className="text-white text-lg sub-font mb-1">Do You Want to See More?</h3>
-          <p className="text-gray-400 text-sm">Taciti conubia nibh sem</p>
+          <p className="text-gray-400 text-sm">Explore our full portfolio</p>
         </div>
 
         <Link

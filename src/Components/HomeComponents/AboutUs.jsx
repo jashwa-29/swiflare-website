@@ -6,7 +6,8 @@ const AboutUs = () => {
     <section className="px-4 mx-auto sm:px-6 lg:px-28">
       <div className="relative bg-[url('../src/assets/about.png')] bg-cover bg-no-repeat w-full mx-auto rounded-2xl overflow-hidden h-[540px] flex justify-start items-end p-7">
         {/* Overlay with color #021644 */}
-        <div className="absolute inset-0 bg-[#021644] opacity-50"></div> {/* Custom overlay color with opacity */}
+        <div className="absolute inset-0 bg-[#021644] opacity-50"></div> 
+        {/* Custom overlay color with opacity */}
 
         {/* Content */}
         <div className="bg-transparent backdrop-blur-md bg-opacity-20 border border-gray-300 p-6 rounded-2xl w-[350px] shadow-md">
@@ -30,7 +31,7 @@ const AboutUs = () => {
                 <div className="w-3 h-3 border-2 border-yellow-500"></div>
                 <div className="w-3 h-3 border-2 border-yellow-500"></div>
               </div>
-              <p className="text-white text-sm font-semibold">From 1200+ Clients</p>
+              <p className="text-white text-sm font-semibold">From 40+ Clients</p>
             </div>
           </div>
         </div>
