@@ -3,46 +3,25 @@ import React from 'react';
 const testimonialsData = [
   {
     quote:
-      'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
-    name: 'Devon Lane',
-    title: 'President of Sales',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-1.jpg',
+      'Swiflare AI transformed our outdated website into a cutting-edge web app with seamless UX. Their AI-driven development approach reduced our load time by 60% and boosted conversions instantly!',
+    name: 'Rajesh Kumar',
+    title: 'CEO, TechNova Solutions',
+    image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGluZGlhbiUyMGJ1c2luZXNzJTIwbWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60', // Indian exec (Unsplash)
   },
   {
     quote:
-      'Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.',
-    name: 'Ronald Richards',
-    title: 'Marketing Coordinator',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-2.jpg',
+      'Their digital marketing team is a game-changer! Our mobile app downloads grew by 300% in 3 months thanks to Swiflare’s targeted AI ad campaigns and SEO strategies.',
+    name: 'Priya Sharma',
+    title: 'CMO, UrbanMingle',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwb2ZmaWNlJTIwd29tYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60', // Indian professional woman
   },
   {
     quote:
-      'This is a top quality product. No need to think twice before making it live on web.',
-    name: 'Jane Cooper',
-    title: 'Dog Trainer',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-3.jpg',
-  },
-  {
-    quote:
-      'Finally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch in days, not months.',
-    name: 'Theresa Webb',
-    title: 'Web Designer',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-4.jpg',
-  },
-  {
-    quote:
-      'My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
-    name: 'Darlene Robertson',
-    title: 'Medical Assistant',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-5.jpg',
-  },
-  {
-    quote:
-      'You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.',
-    name: 'Floyd Miles',
-    title: 'Nursing Assistant',
-    image: 'https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-6.jpg',
-  },
+      'As a startup, Swiflare’s cost-effective AI web solutions helped us launch faster. Their team automated our CRM integration, saving us 20+ hours/week in manual work!',
+    name: 'Arun Patel',
+    title: 'Founder, Finova Labs',
+    image: 'https://images.unsplash.com/photo-1623582854588-d60de57fa33f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwdGVjaCUyMGV4ZWN1dGl2ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60', // Indian tech entrepreneur
+  }
 ];
 
 const Testimonials = () => {

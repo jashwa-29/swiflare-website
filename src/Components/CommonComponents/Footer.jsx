@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center md:justify-end gap-8">
             {[
-              { name: 'Home', path: '/home' },
+              { name: 'Home', path: '/' },
               { name: 'About', path: '/about' },
               { name: 'Services', path: '/services' },
               { name: 'Contact', path: '/contact' },

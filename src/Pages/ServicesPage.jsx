@@ -121,7 +121,7 @@ const ServicesPage = () => {
         <h1 className="text-white text-4xl md:text-5xl">
            Our <span className="text-[#3FA2F6]">Services</span>
           </h1>
-          <p className="text-[#A9AABA] text-[17px]">
+          <p className="mt-5 text-[#A9AABA] text-[17px]">
             Comprehensive solutions tailored to your business needs
           </p>
         </div>
