@@ -1,5 +1,8 @@
 import React from 'react';
 import AboutSection from './AboutSection'; 
+import user1 from '../../assets/user1.png'
+import user2 from '../../assets/user2.png'
+import user3 from '../../assets/user3.png'
 
 const AboutUs = () => {
   return (
@@ -17,10 +20,10 @@ const AboutUs = () => {
 
           <div className="flex items-center space-x-3">
             <div className="flex -space-x-4">
-              <img className="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/44.jpg" alt="User 1" />
-              <img className="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User 2" />
-              <img className="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/women/65.jpg" alt="User 3" />
-              <img className="w-10 h-10 rounded-full border-2 border-white" src="https://randomuser.me/api/portraits/men/76.jpg" alt="User 4" />
+              <img className="w-10 h-10 rounded-full border-2 border-white" src={user1} alt="User 1" />
+              <img className="w-10 h-10 rounded-full border-2 border-white" src={user2}alt="User 2" />
+              <img className="w-10 h-10 rounded-full border-2 border-white" src={user3} alt="User 3" />
+
             </div>
 
             <div>
