@@ -2,8 +2,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate()
   return (
     <div className=" items-center justify-center  px-4 mx-auto sm:px-6 lg:px-28">
       <div className=" bg-[radial-gradient(at_center_center,_#3FA2F6_0%,_#021644_100%)] rounded-[2rem] py-12  w-full  text-center shadow-2xl text-white">
@@ -20,7 +22,7 @@ Experience
           For your business with us
         </h1>
         <div className="mt-10">
-      <button
+      <button onClick={()=>navigate('/contact')}
                       type="submit"
                       className=" bg-[#3FA2F6] hover:bg-[#AD49E1] mx-auto rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
                     >
