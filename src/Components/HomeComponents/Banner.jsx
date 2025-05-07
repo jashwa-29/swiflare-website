@@ -24,7 +24,7 @@ Experience
                       type="submit"
                       className=" bg-[#3FA2F6] hover:bg-[#AD49E1] mx-auto rounded-full w-auto px-8 py-3.5 text-white flex items-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
                     >
-                      <span>Get Started</span>
+                      <span>Let's Talk</span>
                       <FontAwesomeIcon 
                         icon={faArrowRight} 
                         className="transition-transform duration-300 group-hover:translate-x-1" 

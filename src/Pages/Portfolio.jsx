@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowUpRight } from 'react-icons/fi';
 
-import aesthetichospital from '../assets/image.png'; // Replace with actual image
+import aesthetichospital from '../assets/aestheticstudio.png'; // Replace with actual image
 
 const projects = [
   {
@@ -34,7 +34,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="bg-[#050516] py-20 px-4 md:px-8 lg:px-16 mt-14">
+    <section className=" py-20 px-4 md:px-8 lg:px-16 mt-14">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-white text-4xl md:text-5xl">
