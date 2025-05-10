@@ -1,29 +1,70 @@
 import React from 'react';
-import aesthetichospital from '../../assets/aestheticstudio.png';
+import aesthetichospital from '../../assets/Doctor Project.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
+import mythrigleams from '../../assets/Mythris Gleams.png';
+import faberproject from '../../assets/Faber.png'
+import equitasproject from '../../assets/Equitas.png' 
+import goldfinproject from '../../assets/Gold Loan.png'
+import iniproject from '../../assets/Ini.png'
+import goldenhiveproject from '../../assets/Honey.png'
+import digitalarchitectsproject from '../../assets/Digital Marketing Agency.png'
+import minyfoproject from '../../assets/Minyfo.png'
 
 const projects = [
   {
     id: 1,
     tags: ['Healthcare', 'Website', 'UI/UX Design'],
-    image: aesthetichospital,
+    image: aesthetichospital, // Make sure to import or define this image
     title: 'Website for Aesthetic Studio',
     link: '/projects/aesthetic-studio-website',
   },
   {
     id: 2,
-    tags: ['Boost', 'Website', 'Marketing'],
-    image: aesthetichospital,
-    title: 'Growth Marketing For Anox',
-    link: '/projects/anox-growth-marketing',
+    tags: ['E-commerce', 'Website', 'Gift Design'],
+    image: mythrigleams, // Replace with correct image reference
+    title: 'Personalized Gifts for Mythri Gleams',
+    link: '/projects/mythri-gleams-gift-website',
+  },
+
+
+
+  {
+    id: 6,
+    tags: ['E-commerce', 'Website', 'Books'],
+    image: iniproject, // Replace with correct image reference
+    title: 'eCommerce for INI Books',
+    link: '/projects/ini-books-website',
+  },
+  {
+    id: 7,
+    tags: ['FMCG', 'Website', 'Branding'],
+    image: goldenhiveproject, // Replace with correct image reference
+    title: 'Website for Golden Hive Honey',
+    link: '/projects/golden-hive-honey-website',
+  },
+  {
+    id: 8,
+    tags: ['Digital Marketing', 'Website', 'SEO'],
+    image: digitalarchitectsproject, // Replace with correct image reference
+    title: 'Website for Digital Architects',
+    link: '/projects/digital-architects-website',
+  },
+  {
+    id: 9,
+    tags: ['E-commerce', 'Website', 'Jewelry'],
+    image: minyfoproject, // Replace with correct image reference
+    title: 'eCommerce for MINYFO Jewelry',
+    link: '/projects/minyfo-jewelry-website',
   },
 ];
 
+
 const FeaturedProjects = () => {
   return (
-    <section className="bg-[radial-gradient(at_bottom_center,_#021644_0%,_#050516_70%)] py-16 px-4">
+    <section className="bg-[radial-gradient(at_bottom_center,_#021644_0%,_#050516_70%)] py-16 px-4 mx-auto sm:px-6 lg:px-28">
       <div className="max-w-6xl mx-auto text-center">
         <div className="mb-6">
           <div className="text-[#C6C7D5] border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit mx-auto mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)]">
