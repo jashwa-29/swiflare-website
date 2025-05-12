@@ -29,7 +29,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section className="pb-10 sm:py-16 lg:pb-24">
+    <section className="pb-10 lg:py-0 py-16 lg:pb-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-28">
         <div className="max-w-2xl mx-auto text-center mb-10">
         <div className="text-[#C6C7D5] border-[1px] border-[#FFFFFF38] sub-font rounded-full px-5 py-2 text-sm font-medium w-fit mx-auto mb-5 bg-[radial-gradient(at_center_center,_#021644_0%,_#F2295B00_100%)]
