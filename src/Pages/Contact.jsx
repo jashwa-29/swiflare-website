@@ -157,7 +157,7 @@ const handleSubmit = (e) => {
               <div className="pt-6">
                 <h3 className="text-lg text-white mb-4">Follow Us</h3>
                 <div className="flex space-x-3">
-                  {[FaTwitter, FaInstagram, FaLinkedin, FaGithub].map((Icon, i) => (
+                  {[FaTwitter, FaInstagram, FaLinkedin].map((Icon, i) => (
                     <a
                       key={i}
                       href="#"
