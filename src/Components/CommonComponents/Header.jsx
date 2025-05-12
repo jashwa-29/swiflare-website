@@ -44,7 +44,7 @@ const Header = () => {
   src={logo}
   alt="Logo"
   loading="lazy"
-  width="200"
+  width="198"
   height="48"
 />
 
