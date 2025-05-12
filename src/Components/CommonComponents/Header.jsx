@@ -39,11 +39,13 @@ const Header = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link to="/" className="flex">
-          <img
+   <img
   className="w-auto h-8 lg:h-12"
   src={logo}
   alt="Logo"
   loading="lazy"
+  width="120"
+  height="48"
 />
 
               </Link>
