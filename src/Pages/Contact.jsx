@@ -223,7 +223,7 @@ const handleSubmit = (e) => {
                   type="submit"
                   className="bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full px-8 py-3.5 text-white flex items-center gap-3 text-base hover:scale-[0.98] transition-all duration-300 group"
                 >
-                  <span>Get Started</span>
+                  <span>Submit</span>
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     className="transition-transform duration-300 group-hover:translate-x-1"
