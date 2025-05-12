@@ -58,7 +58,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-16 px-4">
+    <section className="py-16 px-4 " id="services">
       <div className="max-w-7xl mx-auto flex lg:flex-row flex-col justify-between gap-16 items-start">
         {/* Left Side */}
         <div className="lg:w-[33%] w-full lg:sticky relative lg:top-28 top-0">

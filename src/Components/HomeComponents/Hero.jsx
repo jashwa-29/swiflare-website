@@ -33,7 +33,9 @@ const Hero = () => {
       </h1>
   
       <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5 w-full max-w-[800px]">
-        <button
+   
+        <a
+           href="#services"
           type="submit"
           className="bg-[#3FA2F6] hover:bg-[#AD49E1] rounded-full w-full lg:w-auto px-8 py-3.5 text-white flex items-center justify-center gap-3 text-base sub-font hover:scale-[0.98] transition-all duration-300 group"
         >
@@ -42,7 +44,7 @@ const Hero = () => {
             icon={faArrowRight} 
             className="transition-transform duration-300 group-hover:translate-x-1" 
           />
-        </button>
+        </a>
         <p className="text-[#C6C7D5] w-full lg:w-[400px] text-base lg:text-lg text-center lg:text-left">
           Our Agency Drives Results, and Fuels Success in the Dynamic Landscape of Online Marketing.
         </p>
