@@ -33,7 +33,7 @@ const AboutSection = () => {
       <div className="w-full flex lg:flex-row flex-col justify-between gap-16">
 
         {/* Left Side - Accordion List */}
-        <div className="space-y-4 lg:w-[40%] w-full sticky top-16 z-10">
+        <div className="space-y-4 lg:w-[40%] w-full  z-10">
           {sections.map((item, index) => {
             const isOpen = openSection === index;
 
