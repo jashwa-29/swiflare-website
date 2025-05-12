@@ -11,6 +11,7 @@ import videoProductionImage from '../assets/Video Production.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -77,6 +78,11 @@ const ServiceCard = ({ service }) => {
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       } transform transition-opacity transition-transform duration-700 ease-out`}
     >
+
+         <Helmet>
+              <title>My Page Title</title>
+                <meta name="description" content="This is the description for SEO." />
+            </Helmet>
       {inView && (
         <Link to={`/services/${service.id}`} className="block h-full w-full">
           {/* Background Image with Gradient Overlay */}

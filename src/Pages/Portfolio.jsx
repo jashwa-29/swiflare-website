@@ -12,6 +12,7 @@ import iniproject from '../assets/Ini.png'
 import goldenhiveproject from '../assets/Honey.png'
 import digitalarchitectsproject from '../assets/Digital Marketing Agency.png'
 import minyfoproject from '../assets/Minyfo.png'
+import { Helmet } from "react-helmet";
 
 const projects = [
   {
@@ -92,6 +93,11 @@ const projects = [
 const Portfolio = () => {
   return (
     <section className=" py-20 px-4 md:px-8 lg:px-16 mt-14">
+         <Helmet>
+              <title>My Page Title</title>
+                <meta name="description" content="This is the description for SEO." />
+            </Helmet>
+
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-white text-4xl md:text-5xl">

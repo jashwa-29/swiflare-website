@@ -3,6 +3,7 @@ import { useSpring, animated } from '@react-spring/web';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Banner from '../Components/HomeComponents/Banner';
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -31,6 +32,10 @@ const About = () => {
   
   return (
     <>
+           <Helmet>
+        <title>My Page Title</title>
+          <meta name="description" content="This is the description for SEO." />
+      </Helmet>
     <div className=" text-white px-4 mx-auto sm:px-6 lg:px-28 mt-32
 "><div className="text-center mb-12">
 <h1 className="text-white text-4xl md:text-5xl">

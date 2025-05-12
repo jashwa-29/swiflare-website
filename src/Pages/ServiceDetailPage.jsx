@@ -13,6 +13,7 @@ import webAppImage from '../assets/Web Applications.jpg';
 import videoProductionImage from '../assets/Video Production.jpg';
 import Banner from '../Components/HomeComponents/Banner'
 import { section } from 'framer-motion/client';
+import { Helmet } from "react-helmet";
 
 const servicesData = [
   {

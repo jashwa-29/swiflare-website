@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -83,6 +84,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen px-4 mx-auto sm:px-6 lg:px-28 py-28 ">
+             <Helmet>
+        <title>My Page Title</title>
+          <meta name="description" content="This is the description for SEO." />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-white text-4xl md:text-5xl">
