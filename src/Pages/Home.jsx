@@ -13,8 +13,9 @@ const Home = () => {
   return (
     <main>
           <Helmet>
-        <title>My Page Title</title>
-          <meta name="description" content="This is the description for SEO." />
+        <title>Swiflare AI Innovations</title>
+  <meta property="og:description" content="Boost your business with our expert digital marketing and AI-powered solutions." />
+             <meta property="og:title" content="The Best Digital Marketing Agency in Chennai" />
       </Helmet>
         <Hero/>
         <AboutUs/>

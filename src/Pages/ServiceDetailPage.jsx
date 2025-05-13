@@ -251,9 +251,10 @@ const ServiceDetailPage = () => {
     <div className="min-h-screen mt-16 py-16 px-4 mx-auto sm:px-6 lg:px-28 bg-[#050516] text-white">
       {/* SEO Meta (would be handled by your framework) */}
            <Helmet>
-      <title>{service.seoTitle}</title>
-      <meta name="description" content={service.seoDescription} />
-</Helmet>
+             <title>Swiflare AI Innovations</title>
+       <meta property="og:description" content="Boost your business with our expert digital marketing and AI-powered solutions." />
+                  <meta property="og:title" content="The Best Digital Marketing Agency in Chennai" />
+           </Helmet>
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumb */}
         <nav className="mb-8 text-sm text-[#C6C7D5] sub-font">

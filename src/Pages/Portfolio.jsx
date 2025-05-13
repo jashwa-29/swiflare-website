@@ -93,9 +93,10 @@ const projects = [
 const Portfolio = () => {
   return (
     <section className=" py-20 px-4 md:px-8 lg:px-16 mt-14">
-         <Helmet>
-              <title>My Page Title</title>
-                <meta name="description" content="This is the description for SEO." />
+            <Helmet>
+              <title>Swiflare AI Innovations</title>
+        <meta property="og:description" content="Boost your business with our expert digital marketing and AI-powered solutions." />
+                   <meta property="og:title" content="The Best Digital Marketing Agency in Chennai" />
             </Helmet>
 
       <div className="max-w-7xl mx-auto">

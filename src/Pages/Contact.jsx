@@ -102,10 +102,11 @@ const handleSubmit = (e) => {
   return (
     <div className="min-h-screen px-4 mx-auto sm:px-6 lg:px-28 py-28 ">
       <ShakeStyles />
-         <Helmet>
-        <title>My Page Title</title>
-          <meta name="description" content="This is the description for SEO." />
-      </Helmet>
+        <Helmet>
+          <title>Swiflare AI Innovations</title>
+    <meta property="og:description" content="Boost your business with our expert digital marketing and AI-powered solutions." />
+               <meta property="og:title" content="The Best Digital Marketing Agency in Chennai" />
+        </Helmet>
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">

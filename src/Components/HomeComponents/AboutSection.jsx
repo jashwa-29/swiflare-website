@@ -14,7 +14,7 @@ const AboutSection = () => {
     {
       title: "01. Our History",
       content:
-        "Swiflare AI Innovations was founded in 2015 by a team of tech enthusiasts and creative strategists with a passion for transforming digital landscapes. What began as a small collective focused on web development quickly evolved into a multi-disciplinary agency offering AI-powered solutions, mobile and web applications, and digital marketing. Over the years, we've empowered startups, enterprises, and global brands to scale with smart technology and human-centric design.",
+        "Swiflare AI Innovations was founded in 2022 by a team of tech enthusiasts and creative strategists with a passion for transforming digital landscapes. What began as a small collective focused on web development quickly evolved into a multi-disciplinary agency offering AI-powered solutions, mobile and web applications, and digital marketing. Over the years, we've empowered startups, enterprises, and global brands to scale with smart technology and human-centric design.",
     },
     {
       title: "02. Our Mission",

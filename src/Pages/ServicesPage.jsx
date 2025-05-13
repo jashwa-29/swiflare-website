@@ -79,10 +79,11 @@ const ServiceCard = ({ service }) => {
       } transform transition-opacity transition-transform duration-700 ease-out`}
     >
 
-         <Helmet>
-              <title>My Page Title</title>
-                <meta name="description" content="This is the description for SEO." />
-            </Helmet>
+           <Helmet>
+             <title>Swiflare AI Innovations</title>
+       <meta property="og:description" content="Boost your business with our expert digital marketing and AI-powered solutions." />
+                  <meta property="og:title" content="The Best Digital Marketing Agency in Chennai" />
+           </Helmet>
       {inView && (
         <Link to={`/services/${service.id}`} className="block h-full w-full">
           {/* Background Image with Gradient Overlay */}
