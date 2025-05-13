@@ -196,7 +196,7 @@ const servicesData = [
     ],
     faqs: [
       { question: "Can you build internal company tools?", answer: "Yes, we specialize in custom portals and dashboards." },
-      { question: "What technologies do you use?", answer: "React, Node.js, Firebase, AWS, PostgreSQL and more." },
+      { question: "What technologies do you use?", answer: "React, Node.js, Express.js, Firebase, MongoDB, MySQL, Java and SpringBoot ." },
       { question: "Do you support ongoing development?", answer: "Yes, we offer long-term feature expansion and maintenance." }
     ],
     seoTitle: "Custom Web App Development Services | Swiflare AI Innovations",
